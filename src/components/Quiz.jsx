@@ -49,7 +49,7 @@ margin-top: 15px;
 cursor: pointer;
 `
 
-const Quiz = ({questions}) => {
+const Quiz = () => {
 
   return (
     <div>
