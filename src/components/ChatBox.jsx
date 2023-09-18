@@ -1,3 +1,4 @@
+
 import styled from 'styled-components';
 import Message from './Message';
 
@@ -9,12 +10,12 @@ margin: 60px 0 120px 30px;
 
 const ChatBox = () => {
 
-
   return (
     <div>
       <StyleChatBox>
         <div>
             <Message />
+          <div ></div>
         </div>
       </StyleChatBox>
     </div>

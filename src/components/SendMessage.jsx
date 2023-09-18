@@ -1,4 +1,6 @@
+
 import styled from 'styled-components';
+
 
 const FormSandMessage = styled.form`
 position: fixed;
@@ -32,11 +34,10 @@ border-bottom-left-radius: 0px;
 
 const SendMessage = () => {
 
-
   return (
     <div>
       <FormSandMessage >
-        <StyleInput type='text'/>
+        <StyleInput/>
         <StyleButton type='submit'>Send</StyleButton>
       </FormSandMessage>
     </div>

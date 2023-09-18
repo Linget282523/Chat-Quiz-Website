@@ -15,11 +15,10 @@ border-radius: 10px;
 padding: 7px
 `
 
-const Message = ({ message }) => { 
-
+const Message = () => { 
     return (
         <div>
-            <div className={`col-md-6 col-lg-7 col-xl-8`}>
+            <div className={`col-md-6 col-lg-7 col-xl-8 `}>
                 <StyleMessage className='pe-3  data-mdb-perfect-scrollbar="true"' >
                     <div className="d-flex flex-row justify-content-start">
                         <div>

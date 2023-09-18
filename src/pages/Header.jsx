@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { UserAuth } from '../context/AuthContext';
 
 const StyleHeader = styled.header`
 position: fixed;
@@ -16,12 +17,21 @@ margin: 10px;
 `
 
 const Header = () => {
+  const { currentUser, logout } = UserAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <div>
         <StyleHeader>
           <div className='btn-header'>
-             <StyleButton >Log Out</StyleButton>
+            {currentUser ? <StyleButton onClick={handleLogout}>Log Out</StyleButton> : ''}
           </div>
         </StyleHeader>
     </div>
