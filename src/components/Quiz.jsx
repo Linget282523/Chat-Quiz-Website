@@ -49,7 +49,10 @@ margin-top: 15px;
 cursor: pointer;
 `
 
-const Quiz = () => {
+const Quiz = ({questions}) => {
+  // const [ currentQuestin, setCurrentQuestion ] = useState(0);
+
+  // const { question, choices, correntAnswer } = questions[currentQuestin];
 
   return (
     <div>
