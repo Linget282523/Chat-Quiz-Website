@@ -14,6 +14,7 @@ color: rgb(185, 189, 196);
 `
 
 const StyleButton = styled.button`
+font-size: 22px;
 margin-left: 80px;
 margin-top: 20px;
 color: white;

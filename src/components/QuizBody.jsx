@@ -22,7 +22,7 @@ font-weight: 700;
 padding-top: 17px;
 margin: 0;
 color: #150080;
-margin-top: -20px;
+margin-top: -10px;
 `
 const StyleAnswer = styled.ul`
 margin-top: 15px;
@@ -41,6 +41,7 @@ border-radius: 16px;
 padding: 11px;
 margin-top: 15px;
 cursor: pointer;
+}
 `
 
 const StyleBtnBox = styled.div`

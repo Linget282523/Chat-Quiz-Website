@@ -17,11 +17,11 @@ export const Questions = [
         "type": "multiple",
         "difficulty": "medium",
         "question": "What is a &quot;dakimakura&quot;?",
-        "correct_answer": "C",
+        "correct_answer": "A",
         "answers": [
+            "A body pillow",
             "A Chinese meal, essentially composed of fish",
             "A yoga posture",
-            "A body pillow",
             "A word used to describe two people who truly love each other"
         ]
     },
@@ -43,11 +43,11 @@ export const Questions = [
         "type": "multiple",
         "difficulty": "medium",
         "question": "What is the Italian word for &quot;tomato&quot;?",
-        "correct_answer": "C",
+        "correct_answer": "B",
         "answers": [
             "Aglio",
-            "Cipolla",
             "Pomodoro",
+            "Cipolla",
             "Peperoncino"
         ]
     },
@@ -69,11 +69,11 @@ export const Questions = [
         "type": "multiple",
         "difficulty": "medium",
         "question": "Which slogan did the fast food company, McDonald&#039;s, use before their &quot;I&#039;m Lovin&#039; It&quot; slogan?",
-        "correct_answer": "C",
+        "correct_answer": "A",
         "answers": [
+            "We Love to See You Smile",
             "Why Pay More!?",
             "Have It Your Way",
-            "We Love to See You Smile",
             "Making People Happy Through Food"
         ]
     },
@@ -95,12 +95,12 @@ export const Questions = [
         "type": "multiple",
         "difficulty": "medium",
         "question": "What is the star sign of someone born on Valentines day?",
-        "correct_answer": "C",
+        "correct_answer": "D",
         "answers": [
             "Pisces",
             "Capricorn",
-            "Aquarius",
-            "Scorpio"
+            "Scorpio",
+            "Aquarius"
         ]
     },
     {

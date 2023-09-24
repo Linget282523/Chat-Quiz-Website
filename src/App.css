@@ -7,6 +7,6 @@ button {
 .btn-header {
   display: flex;
   justify-content: right;
-
+  background-color: #302e8b;
 }
 
