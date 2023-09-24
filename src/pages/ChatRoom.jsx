@@ -2,7 +2,6 @@ import ChatBox from '../components/ChatBox'
 import Quiz from '../components/Quiz'
 import SendMessage from '../components/SendMessage'
 import styled from 'styled-components'
-import { QuizContext } from '../context/QuizContext'
 
 const StyleChatQuiz = styled.div`
 clear: both;
@@ -29,17 +28,14 @@ const ChatRoom = () => {
   return (
     <div className='grid-container'>
       <StyleChatQuiz className='grid-item'>
-          <StyleChatRoom>
-            <ChatBox/>
-            <SendMessage/>
-          </StyleChatRoom>
-        <QuizContext>
-          <StyleQuiz className='grid-item'>
-            <Quiz/>
-          </StyleQuiz>
-        </QuizContext>
+        <StyleChatRoom>
+          <ChatBox/>
+          <SendMessage/>
+        </StyleChatRoom>
+        <StyleQuiz className='grid-item'>
+          <Quiz/>
+        </StyleQuiz>
       </StyleChatQuiz>
-
     </div>
   )
 }

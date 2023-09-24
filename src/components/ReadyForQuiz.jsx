@@ -1,8 +1,6 @@
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { UserAuth } from "../context/AuthContext";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { db } from "../firebase";
+import { useContext } from "react";
+import { QuizContext } from "../context/QuizContext";
 
 const StyleReadyForQuiz = styled.div`
 float: left;
@@ -16,33 +14,22 @@ color: rgb(185, 189, 196);
 `
 
 const StyleButton = styled.button`
+margin-left: 80px;
+margin-top: 20px;
 color: white;
 border-radius: 12px;
 background: #d08642;
+width: 250px;
+height: 70px;
 `
 
 const ReadyForQuiz = (props) => {
-    const { currentUser } = UserAuth();
+    const { quizState, setQuizState } = useContext(QuizContext);
 
-    const handleReadyForQuiz = async (e) => {
-        e.preventDefault();
-
-        try {
-            const { uid, userReadiness } = currentUser;
-            await addDoc(collection(db, 'readiness'), {
-              state: userReadiness,
-              createdAt: serverTimestamp(),
-              uid
-            })
-          } catch (error) {
-            console.log(error);
-          }
-    }
-    
   return (
     <div>
-      <StyleReadyForQuiz onSubmit={handleReadyForQuiz}> 
-        <NavLink to='/chat'><StyleButton {...props}>Ready?</StyleButton></NavLink>
+      <StyleReadyForQuiz>
+        <StyleButton {...props} onClick={() => {setQuizState('quiz')}}>Ready?</StyleButton>
       </StyleReadyForQuiz>
     </div>
   )
